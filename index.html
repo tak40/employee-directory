@@ -2,12 +2,31 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
         <title>Employee Directory</title>
     </head>
     <body>
-        <h1>Employee Directory</h1>
+        <header>
+            <h1>Meet the Team</h1>
+
+            <nav class="filter-nav" aria-label="Employee filter and search">
+                <select aria-label="Filter employees by department">
+                    <option value="all" selected>Everyone</option>
+                    <option value="leadership">Leadership</option>
+                    <option value="engineering">Sales</option>
+                    <option value="marketing">Customer Service</option>
+                    <option value="sales">Product</option>
+                </select>
+                <input type="text" placeholder="search name" aria-label="Search employees by name" />
+            </nav>
+        </header>
+        <main id="employee-list">
+            <!-- Employee cards will be dynamically inserted here -->
+        </main>
         <script type="module" src="/main.js"></script>
     </body>
 </html>
